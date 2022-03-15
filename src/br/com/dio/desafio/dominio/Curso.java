@@ -1,8 +1,11 @@
 package br.com.dio.desafio.dominio;
 
+import lombok.Getter;
+import lombok.Setter;
+
 public class Curso extends Conteudo{
 
-    private int cargaHoraria;
+    @Getter @Setter private int cargaHoraria;
 
     @Override
     public double calcularXp() {
@@ -12,14 +15,6 @@ public class Curso extends Conteudo{
     public Curso() {
     }
 
-
-    public int getCargaHoraria() {
-        return cargaHoraria;
-    }
-
-    public void setCargaHoraria(int cargaHoraria) {
-        this.cargaHoraria = cargaHoraria;
-    }
 
     @Override
     public String toString() {
